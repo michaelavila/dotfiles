@@ -1,4 +1,6 @@
+brew "coreutils"
 brew "grc"
+brew "reattach-to-user-namespace"
 brew "tmux"
 brew "vim"
 brew "zsh"

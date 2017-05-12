@@ -4,12 +4,36 @@ autoload -U compinit && compinit
 
 # Aliases
 
-alias ls="ls -G"
 alias ll="ls -la"
 
 # Generic Colourizer
 
 [[ -s "/usr/local/etc/grc.zsh" ]] && source /usr/local/etc/grc.zsh
+
+# Set Prompt (used by color switching below, in addition to prompt)
+
+setprompt() {
+  PROMPT=$'$FG[240]%~ $FG[$1]% ${vcs_info_msg_0_}\n$ '
+}
+
+# Base 16 Colors
+
+autoload -U colors && colors
+
+BASE16_SHELL=$HOME/.dotfiles/colors/base16-shell
+[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
+
+light() {
+  base16_default-light
+  setprompt 0
+}
+
+dark() {
+  base16_default-dark
+  setprompt 255
+}
+
+light
 
 # Prompt
 
@@ -43,27 +67,7 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr "%{$fg[red]%}"
 zstyle ':vcs_info:git*' formats "%{$fg[green]%}%u%b%{$reset_color%} "
 
-setprompt() {
-  PROMPT=$'$FG[240]%~ $FG[$1]% ${vcs_info_msg_0_}\n$ '
-}
+# Coreutils
 
-# Base 16 Colors
-
-autoload -U colors && colors
-
-BASE16_SHELL=$HOME/.dotfiles/colors/base16-shell
-[ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
-
-light() {
-  base16_default-light
-  setprompt 0
-}
-
-dark() {
-  base16_default-dark
-  setprompt 255
-}
-
-
-light
-
+PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
