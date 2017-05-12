@@ -1,0 +1,22 @@
+[alias]
+  graph        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  amend        = commit --amend
+  unstage      = reset HEAD --
+  rollback     = reset HEAD^
+  commits      = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  untrack      = update-index --assume-unchanged
+  track        = update-index --no-assume-unchanged
+  search       = "!f1() { git log --all --grep=$1; }; f1"
+  recall       = stash show -p
+  join         = merge --no-ff
+[core]
+  editor = /usr/local/bin/vim
+[help]
+  autocorrect  = 1
+[ui]
+  color        = true
+[merge]
+  tool = vimdiff
+[user]
+  email = michael.avila@hulu.com
+  name = Michael Avila
