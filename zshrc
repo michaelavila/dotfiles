@@ -12,3 +12,7 @@ BASE16_SHELL=$HOME/.dotfiles/colors/base16-shell
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 light
+
+# Generic Colourizer
+
+[[ -s "/usr/local/etc/grc.zsh" ]] && source /usr/local/etc/grc.zsh

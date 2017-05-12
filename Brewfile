@@ -1,3 +1,4 @@
+brew "grc"
 brew "tmux"
 brew "vim"
 brew "zsh"
