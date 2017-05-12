@@ -71,3 +71,5 @@ zstyle ':vcs_info:git*' formats "%{$fg[green]%}%u%b%{$reset_color%} "
 
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

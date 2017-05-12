@@ -1,6 +1,8 @@
 brew "coreutils"
+brew "fzf"
 brew "grc"
 brew "reattach-to-user-namespace"
+brew "the_silver_searcher"
 brew "tmux"
 brew "vim"
 brew "zsh"
