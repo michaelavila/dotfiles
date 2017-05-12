@@ -1,3 +1,4 @@
+brew "vim"
 brew "zsh"
 
 tap "caskroom/cask"
