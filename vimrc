@@ -19,3 +19,15 @@ if filereadable(expand("~/.vimrc_background"))
   let base16colorspace=256
   source ~/.vimrc_background
 endif
+
+" Leader Commands
+
+let mapleader=" "
+
+" Leader Commands: Normal Mode
+
+nnoremap <leader><leader> :b#<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>s :so ~/.vimrc<cr>
+nnoremap <leader>w :w<cr>
+nnoremap <leader>x :x<cr>
