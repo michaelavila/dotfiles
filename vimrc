@@ -17,6 +17,27 @@ filetype plugin indent on    " required
 
 syntax on
 
+" Basic Settings
+
+set autoindent
+set backspace=2
+set clipboard=unnamed
+set cursorline
+set expandtab
+set history=10000
+set nohls
+set noswapfile
+set number
+set ruler
+set scrolloff=3
+set softtabstop=2
+set shell=zsh
+set shiftwidth=2
+set t_ti= t_te=
+set tabstop=2
+set whichwrap+=<,>,h,l,[,]
+set wrap linebreak nolist
+
 " Base 16 Colors
 
 if filereadable(expand("~/.vimrc_background"))
