@@ -65,3 +65,7 @@ nnoremap <leader>x :x<cr>
 " Leader Commands: Visual Select Mode
 
 vnoremap s  :sort <cr>
+
+" FZF
+
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
