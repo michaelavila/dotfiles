@@ -1,6 +1,7 @@
 brew "coreutils"
 brew "fzf"
 brew "grc"
+brew "node"
 brew "reattach-to-user-namespace"
 brew "the_silver_searcher"
 brew "tmux"
