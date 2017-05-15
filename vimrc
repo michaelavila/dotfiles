@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'chriskempson/base16-vim'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
+Plugin 'reedes/vim-wheel'
 
 " All of your Plugins must be added before the following line
 
@@ -62,6 +63,10 @@ nnoremap <leader>q :q<cr>
 nnoremap <leader>s :so ~/.vimrc<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>x :x<cr>
+
+" Leader Commands: Normal Mode: Vundle
+
+nnoremap <leader>pi :PluginInstall<cr>
 
 " Leader Commands: Visual Select Mode
 
