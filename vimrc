@@ -41,3 +41,7 @@ nnoremap <leader>q :q<cr>
 nnoremap <leader>s :so ~/.vimrc<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>x :x<cr>
+
+" Leader Commands: Visual Select Mode
+
+vnoremap s  :sort <cr>

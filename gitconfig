@@ -1,14 +1,15 @@
 [alias]
-  graph        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
   amend        = commit --amend
-  unstage      = reset HEAD --
-  rollback     = reset HEAD^
   commits      = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-  untrack      = update-index --assume-unchanged
-  track        = update-index --no-assume-unchanged
-  search       = "!f1() { git log --all --grep=$1; }; f1"
-  recall       = stash show -p
+  graph        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
   join         = merge --no-ff
+  recall       = stash show -p
+  recent       = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'
+  rollback     = reset HEAD^
+  search       = "!f1() { git log --all --grep=$1; }; f1"
+  track        = update-index --no-assume-unchanged
+  unstage      = reset HEAD --
+  untrack      = update-index --assume-unchanged
 [core]
   editor = /usr/local/bin/vim
 [help]
