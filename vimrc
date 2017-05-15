@@ -38,6 +38,8 @@ set shiftwidth=2
 set tabstop=2
 set whichwrap+=<,>,h,l,[,]
 set wrap linebreak nolist
+set ttymouse=xterm2
+set mouse=a
 
 " Base 16 Colors
 
