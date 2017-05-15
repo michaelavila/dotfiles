@@ -25,6 +25,7 @@ set clipboard=unnamed
 set cursorline
 set expandtab
 set history=10000
+set laststatus=2
 set nohls
 set noswapfile
 set number
