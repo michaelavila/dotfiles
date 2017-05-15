@@ -10,12 +10,6 @@ alias ll="ls -la"
 
 [[ -s "/usr/local/etc/grc.zsh" ]] && source /usr/local/etc/grc.zsh
 
-# Set Prompt (used by color switching below, in addition to prompt)
-
-setprompt() {
-  PROMPT=$'$FG[240]%~ $FG[$1]% ${vcs_info_msg_0_}\n$ '
-}
-
 # Base 16 Colors
 
 autoload -U colors && colors
@@ -25,12 +19,12 @@ BASE16_SHELL=$HOME/.dotfiles/colors/base16-shell
 
 light() {
   base16_default-light
-  setprompt 0
+  PROMPT=$'$FG[240]%~ $FG[0]% ${vcs_info_msg_0_}\n$ '
 }
 
 dark() {
   base16_default-dark
-  setprompt 255
+  PROMPT=$'$FG[240]%~ $FG[255]% ${vcs_info_msg_0_}\n$ '
 }
 
 light
