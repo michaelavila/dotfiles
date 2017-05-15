@@ -73,3 +73,7 @@ PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# FZF
+
+export FZF_DEFAULT_COMMAND="ag -g \"\""
