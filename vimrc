@@ -33,7 +33,6 @@ set scrolloff=3
 set softtabstop=2
 set shell=zsh
 set shiftwidth=2
-set t_ti= t_te=
 set tabstop=2
 set whichwrap+=<,>,h,l,[,]
 set wrap linebreak nolist
