@@ -11,6 +11,7 @@ Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 Plugin 'reedes/vim-wheel'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'w0rp/ale'
 
 " Language specific
 
