@@ -13,6 +13,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'reedes/vim-wheel'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'w0rp/ale'
+Plugin 'vimwiki/vimwiki'
 
 " Language specific
 
