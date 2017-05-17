@@ -11,6 +11,10 @@ Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 Plugin 'reedes/vim-wheel'
 
+" Language specific
+
+Plugin 'mxw/vim-jsx'
+
 " All of your Plugins must be added before the following line
 
 call vundle#end()            " required
@@ -73,3 +77,10 @@ nnoremap <leader>pi :PluginInstall<cr>
 " Leader Commands: Visual Select Mode
 
 vnoremap s  :sort <cr>
+
+" Language Support
+
+" JSX
+
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
