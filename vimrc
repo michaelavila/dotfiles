@@ -6,6 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'ajh17/VimCompletesMe'
 Plugin 'chriskempson/base16-vim'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
@@ -15,6 +16,7 @@ Plugin 'w0rp/ale'
 
 " Language specific
 
+Plugin 'ternjs/tern_for_vim'
 Plugin 'mxw/vim-jsx'
 
 " All of your Plugins must be added before the following line
