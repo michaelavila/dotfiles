@@ -1,5 +1,6 @@
 brew "coreutils"
 brew "fzf"
+brew "git"
 brew "grc"
 brew "node"
 brew "reattach-to-user-namespace"
