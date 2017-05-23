@@ -71,3 +71,9 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 # FZF
 
 export FZF_DEFAULT_COMMAND="ag -g \"\""
+
+# ssh-agent
+
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+  eval `ssh-agent`
+fi
