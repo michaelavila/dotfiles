@@ -77,3 +77,7 @@ export FZF_DEFAULT_COMMAND="ag -g \"\""
 if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval `ssh-agent`
 fi
+
+# gpg
+
+export GPG_TTY=$(tty)

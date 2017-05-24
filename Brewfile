@@ -1,6 +1,8 @@
 brew "coreutils"
 brew "fzf"
 brew "git"
+brew "gpg2"
+brew "gpg-agent"
 brew "grc"
 brew "node"
 brew "reattach-to-user-namespace"

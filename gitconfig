@@ -12,13 +12,18 @@
   unstage      = reset HEAD --
   untrack      = update-index --assume-unchanged
 [core]
-  editor = /usr/local/bin/vim
+  editor       = /usr/local/bin/vim
 [help]
   autocorrect  = 1
 [ui]
   color        = true
 [merge]
-  tool = vimdiff
+  tool         = vimdiff
 [user]
-  email = michael.avila@hulu.com
-  name = Michael Avila
+  email        = michael.avila@hulu.com
+  name         = Michael Avila
+  signingkey   = michael.avila@hulu.com
+[commit]
+  gpgsign      = true
+[tag]
+  gpgsign      = true
