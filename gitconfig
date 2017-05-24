@@ -1,8 +1,8 @@
 [alias]
   aliases     = ! git config --list | grep alias
   amend        = commit --amend
-  commits      = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
-  graph        = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  commits      = log --pretty=format:'%Cred%h%Creset - %G? -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+  graph        = log --graph --pretty=format:'%Cred%h%Creset - %G? -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
   join         = merge --no-ff
   recall       = stash show -p
   recent       = for-each-ref --count=10 --sort=-committerdate refs/heads/ --format='%(refname:short)'
