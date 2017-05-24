@@ -81,7 +81,7 @@ nnoremap <leader>pi :PluginInstall<cr>
 
 " Leader Commands: Visual Select Mode
 
-vnoremap s  :sort <cr>
+vnoremap <leader>s  :sort <cr>
 
 " Language Support
 
