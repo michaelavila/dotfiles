@@ -18,18 +18,18 @@ BASE16_SHELL=$HOME/.dotfiles/colors/base16-shell
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
 light() {
-  base16_default-light
+  base16_tomorrow
   PROMPT=$'$FG[240]%~ ${vcs_info_msg_0_}\n$ $FG[0]%'
 }
 
 dark() {
-  base16_default-dark
+  base16_tomorrow-night
   PROMPT=$'$FG[240]%~ ${vcs_info_msg_0_}\n$ $FG[255]%'
 }
 
 # Set colors only if they haven't already been set
 
-if [[ $(readlink "$HOME/.base16_theme") =~ base16-default-light ]];
+if [[ $(readlink "$HOME/.base16_theme") =~ base16-tomorrow ]];
 then
   light
 else
