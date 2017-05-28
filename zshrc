@@ -27,7 +27,14 @@ dark() {
   PROMPT=$'$FG[240]%~ $FG[255]% ${vcs_info_msg_0_}\n$ '
 }
 
-light
+# Set colors only if they haven't already been set
+
+if [[ $(readlink "$HOME/.base16_theme") =~ base16-default-light ]];
+then
+  light
+else
+  dark
+fi
 
 # Prompt
 
