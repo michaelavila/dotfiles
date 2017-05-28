@@ -70,6 +70,7 @@ nnoremap ;; ;
 nnoremap <leader><leader> :b#<cr>
 nnoremap <leader>b :Buffers<cr>
 nnoremap <leader>e :Files<cr>
+nnoremap <leader>n :set number!<cr>
 nnoremap <leader>o :only<cr>
 nnoremap <leader>q :q<cr>
 nnoremap <leader>s :so ~/.vimrc<cr>
