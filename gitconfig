@@ -25,5 +25,3 @@
   signingkey   = michael.avila@hulu.com
 [commit]
   gpgsign      = true
-[tag]
-  gpgsign      = true
