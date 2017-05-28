@@ -80,6 +80,8 @@ nnoremap <leader>x :x<cr>
 " Leader Commands: Normal Mode: Vundle
 
 nnoremap <leader>pi :PluginInstall<cr>
+nnoremap <leader>pc :PluginClean<cr>
+nnoremap <leader>pu :PluginUpdate<cr>
 
 " Leader Commands: Visual Select Mode
 
