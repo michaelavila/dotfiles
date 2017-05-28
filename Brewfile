@@ -14,6 +14,7 @@ brew "zsh"
 tap "caskroom/cask"
 tap "caskroom/versions"
 
+cask "google-chrome"
 cask "iterm2-nightly"
 cask "slack"
 cask "screenhero"
