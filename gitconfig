@@ -20,8 +20,7 @@
 [merge]
   tool         = vimdiff
 [user]
-  email        = michael.avila@hulu.com
+  email        = me@michaelavila.com
   name         = Michael Avila
-  signingkey   = michael.avila@hulu.com
 [commit]
   gpgsign      = true
