@@ -19,12 +19,12 @@ BASE16_SHELL=$HOME/.dotfiles/colors/base16-shell
 
 light() {
   base16_default-light
-  PROMPT=$'$FG[240]%~ $FG[0]% ${vcs_info_msg_0_}\n$ '
+  PROMPT=$'$FG[240]%~ ${vcs_info_msg_0_}\n$ $FG[0]%'
 }
 
 dark() {
   base16_default-dark
-  PROMPT=$'$FG[240]%~ $FG[255]% ${vcs_info_msg_0_}\n$ '
+  PROMPT=$'$FG[240]%~ ${vcs_info_msg_0_}\n$ $FG[255]%'
 }
 
 # Set colors only if they haven't already been set
