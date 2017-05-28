@@ -29,11 +29,11 @@ dark() {
 
 # Set colors only if they haven't already been set
 
-if [[ $(readlink "$HOME/.base16_theme") =~ base16-tomorrow ]];
+if [[ $(readlink "$HOME/.base16_theme") =~ base16-tomorrow-night ]];
 then
-  light
-else
   dark
+else
+  light
 fi
 
 # Prompt
