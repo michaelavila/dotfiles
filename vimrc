@@ -89,13 +89,3 @@ vnoremap <leader>s  :sort <cr>
 " JSX
 
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
-
-" vimwiki
-
-let wiki_1 = {}
-let wiki_1.path = '~/huluwiki'
-let wiki_1.path_html = '~/huluwiki_html'
-let wiki_2 = {}
-let wiki_2.path = '~/mewiki'
-let wiki_2.path_html = '~/mewiki_html'
-let g:vimwiki_list = [wiki_1, wiki_2]
