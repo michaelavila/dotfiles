@@ -22,7 +22,7 @@ setprompt() {
 }
 
 light() {
-  base16_tomorrow
+  base16_default-light
   setprompt
 }
 
