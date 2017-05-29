@@ -17,18 +17,18 @@ autoload -U colors && colors
 BASE16_SHELL=$HOME/.dotfiles/colors/base16-shell
 [ -n "$PS1" ] && [ -s $BASE16_SHELL/profile_helper.sh ] && eval "$($BASE16_SHELL/profile_helper.sh)"
 
-setprompt() {
-  PROMPT=$'%F{magenta}%~%f ${vcs_info_msg_0_}\n$%f '
+prompt() {
+  PROMPT=$'%F{8}%~%f ${vcs_info_msg_0_}\n$%f '
 }
 
 light() {
   base16_default-light
-  setprompt
+  prompt
 }
 
 dark() {
   base16_tomorrow-night
-  setprompt
+  prompt
 }
 
 # Set colors only if they haven't already been set
@@ -53,8 +53,9 @@ precmd() {
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr '%F{red}'
-zstyle ':vcs_info:git*' actionformats '%F{yellow}%a%f'
-zstyle ':vcs_info:git*' formats '%F{green}%u%b%f'
+zstyle ':vcs_info:*' stagedstr '%F{yellow}'
+zstyle ':vcs_info:git*' actionformats '%F{magenta}%a %c%f'
+zstyle ':vcs_info:git*' formats '%F{green}%c%u%b %f'
 
 # Coreutils
 
