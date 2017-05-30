@@ -1,1 +1,1 @@
-EXCLUDES="Brewfile colors fonts"
+EXCLUDES="Brewfile colors fonts osx"
