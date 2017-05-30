@@ -8,11 +8,12 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ajh17/VimCompletesMe'
 Plugin 'chriskempson/base16-vim'
-Plugin 'tpope/vim-dispatch'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 Plugin 'reedes/vim-wheel'
+Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'tpope/vim-dispatch'
 Plugin 'vimwiki/vimwiki'
 Plugin 'w0rp/ale'
 
@@ -79,6 +80,8 @@ nnoremap <leader>x :x<cr>
 
 nnoremap <leader>cc :cclose<cr>
 nnoremap <leader>co :copen<cr>
+
+nnoremap <leader>f :NERDTreeToggle<cr>
 
 " Leader Commands: Normal Mode: Vundle
 
