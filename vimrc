@@ -77,6 +77,9 @@ nnoremap <leader>s :so ~/.vimrc<cr>
 nnoremap <leader>w :w<cr>
 nnoremap <leader>x :x<cr>
 
+nnoremap <leader>cc :cclose<cr>
+nnoremap <leader>co :copen<cr>
+
 " Leader Commands: Normal Mode: Vundle
 
 nnoremap <leader>pi :PluginInstall<cr>
