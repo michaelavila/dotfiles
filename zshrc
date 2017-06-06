@@ -1,3 +1,7 @@
+# Path
+
+export PATH="./node_modules/.bin:$PATH"
+
 # Completion
 
 autoload -U compinit && compinit
