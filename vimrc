@@ -20,8 +20,9 @@ Plugin 'w0rp/ale'
 
 " Language specific
 
-Plugin 'ternjs/tern_for_vim'
 Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
+Plugin 'ternjs/tern_for_vim'
 
 " All of your Plugins must be added before the following line
 
