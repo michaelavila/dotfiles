@@ -15,6 +15,7 @@ Plugin 'reedes/vim-wheel'
 Plugin 'scrooloose/nerdtree'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'tpope/vim-dispatch'
+Plugin 'tpope/vim-fugitive'
 Plugin 'vimwiki/vimwiki'
 Plugin 'w0rp/ale'
 
@@ -61,11 +62,11 @@ if filereadable(expand("~/.vimrc_background"))
   source ~/.vimrc_background
 endif
 
-" Leader Commands
+" leader Commands
 
 let mapleader=" "
 
-" Leader Commands: Normal Mode
+" leader Commands: Normal Mode
 
 nnoremap 1 :!
 nnoremap ; :
@@ -85,13 +86,13 @@ nnoremap <leader>co :copen<cr>
 
 nnoremap <leader>f :NERDTreeToggle<cr>
 
-" Leader Commands: Normal Mode: Vundle
+" leader Commands: Normal Mode: Vundle
 
 nnoremap <leader>pi :PluginInstall<cr>
 nnoremap <leader>pc :PluginClean<cr>
 nnoremap <leader>pu :PluginUpdate<cr>
 
-" Leader Commands: Visual Select Mode
+" leader Commands: Visual Select Mode
 
 vnoremap <leader>s  :sort <cr>
 
@@ -109,20 +110,52 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 " Vimux
 
- " Prompt for a command to run
- map <Leader>vp :VimuxPromptCommand<CR>
+" Prompt for a command to run
+map <leader>vp :VimuxPromptCommand<cr>
 
- " Run last command executed by VimuxRunCommand
- map <Leader>vl :VimuxRunLastCommand<CR>
+" Run last command executed by VimuxRunCommand
+map <leader>vl :VimuxRunLastCommand<cr>
 
- " Inspect runner pane
- map <Leader>vi :VimuxInspectRunner<CR>
+" Inspect runner pane
+map <leader>vi :VimuxInspectRunner<cr>
 
- " Close vim tmux runner opened by VimuxRunCommand
- map <Leader>vq :VimuxCloseRunner<CR>
+" Close vim tmux runner opened by VimuxRunCommand
+map <leader>vq :VimuxCloseRunner<cr>
 
- " Interrupt any command running in the runner pane
- map <Leader>vx :VimuxInterruptRunner<CR>
+" Interrupt any command running in the runner pane
+map <leader>vx :VimuxInterruptRunner<cr>
 
- " Zoom the runner pane (use <bind-key> z to restore runner pane)
- map <Leader>vz :call VimuxZoomRunner()<CR>
+" Zoom the runner pane (use <bind-key> z to restore runner pane)
+map <leader>vz :call VimuxZoomRunner()<cr>
+
+" Fugitive
+
+" git status
+nnoremap <leader>gs :Gstatus<cr>
+
+" git diff <file>
+nnoremap <leader>gd :Gdiff<cr>
+
+" git mv <file>
+nnoremap <leader>gr :Gmove<cr>
+
+" git rm <file>
+nnoremap <leader>gr :Gremove<cr>
+
+" git grep
+nnoremap <leader>gg :Ggrep 
+
+" git commit
+nnoremap <leader>gc :Gcommit<cr> 
+
+" git ammend
+nnoremap <leader>ga :Git amend<cr> 
+
+" git push
+nnoremap <leader>gps :Gpush<cr> 
+
+" git pull
+nnoremap <leader>gp :Gpull<cr> 
+
+" git fetch
+nnoremap <leader>gf :Gfetch<cr>
