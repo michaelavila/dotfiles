@@ -13,6 +13,7 @@
   untrack      = update-index --assume-unchanged
 [core]
   editor       = /usr/local/bin/vim
+	excludesfile = /Users/me/.gitignore
 [help]
   autocorrect  = 1
 [ui]
