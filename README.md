@@ -15,9 +15,6 @@
 $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-* iTerm: Update font size to 16
-* iTerm: Enable "Applications in terminal may access clipboard"
-
 3. Install dotfiles (requires git, which requires xcode):
 
 ```
@@ -30,6 +27,9 @@ $ git clone git@github.com:michaelavila/dotfiles.git $HOME/.dotfiles
 $ cd $HOME/.dotfiles
 $ brew bundle
 ```
+
+* iTerm: Update font size to 16
+* iTerm: Enable "Applications in terminal may access clipboard"
 
 5. Install rc files
 
