@@ -18,7 +18,6 @@ tap "caskroom/versions"
 cask "google-chrome"
 cask "iterm2-nightly"
 cask "slack"
-cask "screenhero"
 
 tap "thoughtbot/formulae"
 
